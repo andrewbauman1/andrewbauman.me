@@ -1,0 +1,25 @@
+::selection {
+  background: #ffdd57; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffdd57; /* Gecko Browsers */
+}
+
+@media screen and (min-width: 1024px) {
+  #elevatorPitch{
+    padding-right: 15em;
+  }
+}
+
+footer li{
+  list-style: none;
+  margin: 0 1.5em 0 0 ;
+}
+
+#servicesButton{
+  margin-bottom:1.5em;
+}
+
+#elevatorPitchTitle {
+  color: #0023B2;
+}

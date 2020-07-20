@@ -1,0 +1,105 @@
+<!--
+********************************************************************************
+* index.html
+* ===================================================
+* Andrew T. Bauman: Personal Website
+* ===================================================
+* Author: Andrew T. Bauman
+* Github: github.com/andrewbauman1
+* Personal Website: andrewbauman.me
+********************************************************************************
+-->
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew T. Bauman</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/modal-fx.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://andrewbauman.me">
+          <a class="navbar-item" href="https://andrewbauman.me"><strong>Andrew Bauman</strong></a>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  <div class="navbar-menu" id="navbarBasicExample">
+    <div class="navbar-start">
+      <a href="services" class="navbar-item">Services</a>
+      <a href="projects" class="navbar-item">Projects</a>
+      <a href="https://blog.andrewbauman.me" class="navbar-item">Thoughts</a>
+    </div>
+    <div class="navbar-end">
+      <a href="about" class="navbar-item">About</a>
+      <a class="navbar-item modal-button" data-target="modal-card">Contact</a>
+    </div>
+  </div>
+</nav>
+  <section class="hero is-fullheight-with-navbar">
+		<div class=hero-body>
+			<div class="container" id="elevatorPitch">
+				<h1 class="title is-1" id="elevatorPitchTitle">Hi, I'm Andrew—</h1>
+				<h1 class="subtitle is-4">An innovative <strong>business professional</strong> and <strong>problem-solver</strong> versed in
+                                  <strong>technology</strong>, <strong>leadership</strong>, and <strong> communication</strong>.
+                                  Major experience lies in strategizing and leading cross-functional teams to bring about fundamental
+                                  change and improvement in strategy, process, and profitability – both as a leader and expert consultant.</h1>
+
+        <h1 class="subtitle is-4">I am passionate about technology and serving others. I strive to create innovative and inclusive
+                                  tech solutions while also <a href="https://blog.andrewbauman.me">sharing lessons and tips</a> learned along the way.</h1>
+
+        <h5 class="subtitle is-5">For business inquiries, <a class="modal-button" data-target="modal-card">drop me an email</a> and let's talk.</h5>
+				</div>
+			</div>
+	</section>
+  <footer class="footer">
+  <div class="content">
+    <div class="is-pulled-left">
+          <p>Contents licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+          <br/>Made using HTML and <a href="https://bulma.io/" target="_blank">Bulma</a>
+          <br/>MIT License &copy; 2019-present <a href="http://andrewbauman.me">Andrew Bauman</a>.</p>
+  </div>
+  <div class="is-pulled-right">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a class="modal-button" data-target="modal-card">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- Contact Card Begins -->
+<div id="modal-card" class="modal modal-fx-superScaled">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+        <!-- content -->
+        <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                    <img src="img/contact.png" alt="Contact me on LinkedIn">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <p class="title is-4">Let's get in touch!</p>
+                    <p class="subtitle is-8">Content above is static to avoid spam.</p>
+                    <p class="subtitle is-8"> Reach out by Email or InMail or, <a href="https://meetings.hubspot.com/andrewbauman001" target="_blank">we can schedule a call!</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- End content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!--End Contact Card-->
+  <script src="js/hamburger.js"></script>
+  <script src="js/modal-fx.js"></script>
+  </body>
+</html>

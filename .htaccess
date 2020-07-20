@@ -1,0 +1,25 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://blog.andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://blog.andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.blog.andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.blog.andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://blog.andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://blog.andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.andrewbauman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.blog.andrewbauman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.blog.andrewbauman.me$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+#remove html file extension-e.g. https://example.com/file.html will become https://example.com/file
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
