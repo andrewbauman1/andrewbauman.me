@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/modal-fx.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.5.2/js/all.js"></script>
   </head>
   <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -35,43 +35,44 @@
       </div>
   <div class="navbar-menu" id="navbarBasicExample">
     <div class="navbar-start">
-      <a href="services" class="navbar-item">Services</a>
-      <a href="projects" class="navbar-item">Projects</a>
-      <a href="https://blog.andrewbauman.me" class="navbar-item">Thoughts</a>
+      <!--<a href="services" class="navbar-item">Services</a>
+      <a href="projects" class="navbar-item">Projects</a> -->
+      <a href="#" class="navbar-item">Projects (Coming Soon)</a>
+    <a href="https://andrewbauman.me/about.html" class="navbar-item">About</a>
     </div>
     <div class="navbar-end">
-      <a href="about" class="navbar-item">About</a>
-      <a class="navbar-item modal-button" data-target="modal-card">Contact</a>
+      <ul id="footerLinks">
+        <li><a href="https://bsky.app/profile/drewsiph.bsky.social" target="_blank"><span class="icon"><i class="fa-brands fa-bluesky fa-lg"></i></span></a></li>
+        <li><a href="https://www.linkedin.com/in/drewbauman/" target="_blank"><span class="icon"><i class="fa-brands fa-linkedin fa-lg"></i></span></a></li>
+        <li><a href="mailto:hello@andrewbauman.me"><span class="icon"><i class="fa-regular fa-envelope fa-lg"></i></span></a></li>
+    </ul>
     </div>
   </div>
 </nav>
   <section class="hero is-fullheight-with-navbar">
 		<div class=hero-body>
 			<div class="container" id="elevatorPitch">
-				<h1 class="title is-1" id="elevatorPitchTitle">Hi, I'm Andrew—</h1>
-				<h1 class="subtitle is-4">An innovative <strong>business professional</strong> and <strong>problem-solver</strong> versed in
-                                  <strong>technology</strong>, <strong>leadership</strong>, and <strong> communication</strong>.
-                                  Major experience lies in strategizing and leading cross-functional teams to bring about fundamental
-                                  change and improvement in strategy, process, and profitability – both as a leader and expert consultant.</h1>
+                <h1 class="title is-1" id="elevatorPitchTitle">👋 Hi, I'm Andrew—</h1>
+                <h4 class="subtitle is-4">Currently a project manager at <a href="https://dynamosoftware.com">Dynamo Software</a> specializing in database migrations, data visualization, and product training.  I’m passionate about turning user needs into secure, intuitive products that bridge the gap between people and technology. </h4>
 
-        <h1 class="subtitle is-4">I am passionate about technology and serving others. I strive to create innovative and inclusive
-                                  tech solutions while also <a href="https://blog.andrewbauman.me">sharing lessons and tips</a> learned along the way.</h1>
+                <h4 class="subtitle is-4">Having collaborated with artists, media companies, and financial firms, I bring a strategic and user-centered approach to every project. I thrive on aligning teams, refining product features, and designing accessible tech that resonates with real people.</h4>
+                
 
-        <h5 class="subtitle is-5">For business inquiries, <a class="modal-button" data-target="modal-card">drop me an email</a> and let's talk.</h5>
+                <h5 class="subtitle is-5">Outside of work, I’m usually experimenting with new projects, cooking up creative ideas in the kitchen, volunteering in my community—or convincing myself that this will be the week I finally get into running. </br> </br> For business inquiries, <a class="modal-button" data-target="modal-card">drop me an email</a> and let's talk.</h5>
 				</div>
 			</div>
 	</section>
   <footer class="footer">
   <div class="content">
     <div class="is-pulled-left">
-          <p>Contents licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
-          <br/>Made using HTML and <a href="https://bulma.io/" target="_blank">Bulma</a>
-          <br/>MIT License &copy; 2019-present <a href="http://andrewbauman.me">Andrew Bauman</a>.</p>
+          Made with HTML and <a href="https://bulma.io/" target="_blank">Bulma</a>
+          <br/>MIT License &copy; 2019-2024 <a href="http://andrewbauman.me">Andrew Bauman</a>.</p>
   </div>
   <div class="is-pulled-right">
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a class="modal-button" data-target="modal-card">Contact</a></li>
+    <ul id="footerLinks">
+        <li><a href="https://bsky.app/profile/drewsiph.bsky.social"target="_blank"><span class="icon"><i class="fa-brands fa-bluesky fa-lg"></i></span></a></li>
+        <li><a href="https://www.linkedin.com/in/drewbauman/" target="_blank"><span class="icon"><i class="fa-brands fa-linkedin fa-lg"></i></span></a></li>
+        <li><a class="modal-button" data-target="modal-card"><span class="icon"><i class="fa-regular fa-envelope fa-lg"></i></span></a></li>
     </ul>
   </div>
 </footer>
@@ -89,8 +90,8 @@
             <div class="card-content">
                 <div class="content">
                     <p class="title is-4">Let's get in touch!</p>
-                    <p class="subtitle is-8">Content above is static to avoid spam.</p>
-                    <p class="subtitle is-8"> Reach out by Email or InMail or, <a href="https://meetings.hubspot.com/andrewbauman001" target="_blank">we can schedule a call!</a></p>
+                    <p class="subtitle is-10">Content above is static to avoid spam.</p>
+                    <p class="subtitle is-8"> Reach out by Email or send me a message on LinkedIn</p>
                 </div>
             </div>
         </div>
