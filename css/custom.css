@@ -22,11 +22,20 @@ footer li{
 
 #elevatorPitchTitle {
   color: #0023B2;
-  padding-bottom: .5em
+  padding-bottom: .5em;
 }
 #footerLinks li {
   display: inline;
   list-style-type: none;
   float: left;
   padding-right: 20px;
+}
+
+#knowledgeBaseTitle {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.badge-base {
+  min-height: 300px; /* Adjust based on the badge's actual height */
+  overflow: visible;
 }

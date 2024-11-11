@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/modal-fx.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  </head>
+    <script defer src="https://use.fontawesome.com/releases/v6.5.2/js/all.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>  
+</head>
   <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -23,40 +23,50 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-  <div class="navbar-menu" id="navbarBasicExample">
+    <div class="navbar-menu" id="navbarBasicExample">
     <div class="navbar-start">
-      <a href="services" class="navbar-item">Services</a>
-      <a href="projects" class="navbar-item">Projects</a>
-      <a href="https://blog.andrewbauman.me" class="navbar-item">Thoughts</a>
+      <!--<a href="services" class="navbar-item">Services</a>
+      <a href="projects" class="navbar-item">Projects</a> -->
+      <a href="#" class="navbar-item">Projects (Coming Soon)</a>
+    <a href="https://andrewbauman.me/about.html" class="navbar-item">About</a>
     </div>
     <div class="navbar-end">
-      <a href="about.html" class="navbar-item">About</a>
-      <a class="navbar-item modal-button" data-target="modal-card">Contact</a>
+      <ul id="footerLinks">
+        <li><a href="https://bsky.app/profile/drewsiph.bsky.social" target="_blank"><span class="icon"><i class="fa-brands fa-bluesky fa-lg"></i></span></a></li>
+        <li><a href="https://www.linkedin.com/in/drewbauman/" target="_blank"><span class="icon"><i class="fa-brands fa-linkedin fa-lg"></i></span></a></li>
+        <li><a href="mailto:hello@andrewbauman.me"><span class="icon"><i class="fa-regular fa-envelope fa-lg"></i></span></a></li>
+    </ul>
     </div>
   </div>
 </nav>
   <section class="hero">
 		<div class=hero-body>
-			<div class="container" id="elevatorPitch">
-				<h1 class="title is-1">About Me—</h1>
+			<div class="container" >
+				<h1 class="title is-1">A Little About Me—</h1>
           <div class="tile is-ancestor">
             <div class="tile is-vertical is-8">
               <div class="tile is-parent">
                 <article class="tile is-child">
-                  <a href="files/resumes/baumanResume_06-2020.pdf" target="_blank"><button class="button is-warning is-medium" id="servicesButton">Download my Resume</button></a>
-                  <h5 class="subtitle is-5">I'm currently working a master's candidate at <a href="marist.edu" target"_blank">Marist</a> studying Information Systems, with concentrations in Management and Business Analytics, and doing remote work.</h5>
-                  <h5 class="subtitle is-5">I am passionate about technology and serving others. I strive to create innovative and inclusive tech solutions while also sharing lessons and tips learned along the way.</h5>
-                  <h5 class="subtitle is-5"><a class="modal-button" data-target="modal-card">Let’s get in touch!</a> Be sure to connect with me on LinkedIn and stay tuned!</h5>
+                  <a href="files/resumes/baumanResume_2024_11.pdf" target="_blank"><button class="button is-warning is-medium" id="servicesButton">Download my Resume</button></a>
+                  <h5 class="subtitle is-5">I hold a Master’s degree in Information Systems with a focus on Management and Business Analytics from <a href="https://www.marist.edu" target"_blank">Marist</a>. My passion lies in creating accessible, user-friendly tech solutions that drive positive change.</h5>
+                    
+                  <h5 class="subtitle is-5">I’m always learning and excited to connect with others focused on making technology work for everyone.</h5>
+                    
+                  <h5 class="subtitle is-5"> 
+                     Feel free to <a class="modal-button" data-target="modal-card">reach out</a>, connect with me on LinkedIn, and stay tuned for more!</h5>
                 </article>
               </div>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="drewbauman"><a class="LI-simple-link" href='https://www.linkedin.com/in/drewbauman?trk=profile-badge'>Andrew Bauman</a></div>
+            <article class="tile is-child">
+               <div class=" LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="HORIZONTAL" data-vanity="drewbauman" data-version="v1"></div>
               </article>
+                
             </div>
+            
           </div>
-          <h3 class="title is-3">Knowledge Base</h3>
+                
+          <h3 id="knowledgeBaseTitle" class="title is-3">Knowledge Base</h3>
           <h5 class="subtitle is-5">Here are the platforms I am proficient and/or currently use on a daily basis.</h5>
           <div class="table-container">
           <table class="table is-fullwidth">
@@ -71,43 +81,51 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>CSS & HTML</td>
+              <tr><!-- Languages -->
+                <td>Python</td>
                 <td>Bootstrap / Bulma</td>
-                <td>Docker</td>
-                <td>atom.io</td>
+                <td>Docker/Kubernetes</td>
+                <td>Logseq</td>
                 <td>AWS</td>
                 <td>Next.js</td>
               </tr>
-              <tr>
+              <tr><!-- Frontend -->
                 <td>JavaScript</td>
-                <td></td>
+                <td>Vue.js</td>
                 <td>Node.js</td>
                 <td>Trello</td>
                 <td>cPanel</td>
                 <td>DatoCMS</td>
               </tr>
-              <tr>
-                <td>Python</td>
-                <td></td>
+              <tr><!-- Backend -->
+                <td>SQL</td>
+                <td>React</td>
                 <td>PostgreSQL</td>
                 <td>Git</td>
                 <td>DigitalOcean</td>
-                <td>Vercel</td>
+                <td>Vercel / Netlify</td>
               </tr>
-              <tr>
-                <td>SQL</td>
+              <tr><!-- Tools -->
+                <td>R</td>
                 <td></td>
                 <td>MariaDB / MySQL</td>
                 <td>Affinity Designer</td>
                 <td>WordPress</td>
-                <td>Vue / React / Angular</td>
+                <td></td>
               </tr>
-              <tr>
-                <td>R</td>
+              <tr><!-- Infrastructure -->
+                <td>HTML & CSS</td>
                 <td></td>
                 <td>NGINX</td>
                 <td>Jupyter Notebook</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr><!-- Infrastructure -->
+                <td>Markdown</td>
+                <td></td>
+                <td>Flask</td>
+                <td>atom.io</td>
                 <td></td>
                 <td></td>
               </tr>
@@ -119,17 +137,17 @@
 	</section>
 
 
-  <footer class="footer">
+<footer class="footer">
   <div class="content">
     <div class="is-pulled-left">
-          <p>Contents licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
-          <br/>Made using HTML and <a href="https://bulma.io/" target="_blank">Bulma</a>
-          <br/>MIT License &copy; 2019-present <a href="http://andrewbauman.me">Andrew Bauman</a>.</p>
+          Made with HTML and <a href="https://bulma.io/" target="_blank">Bulma</a>
+          <br/>MIT License &copy; 2019-2024 <a href="http://andrewbauman.me">Andrew Bauman</a>.</p>
   </div>
   <div class="is-pulled-right">
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a class="modal-button" data-target="modal-card">Contact</a></li>
+    <ul id="footerLinks">
+        <li><a href="https://bsky.app/profile/drewsiph.bsky.social"target="_blank"><span class="icon"><i class="fa-brands fa-bluesky fa-lg"></i></span></a></li>
+        <li><a href="https://www.linkedin.com/in/drewbauman/" target="_blank"><span class="icon"><i class="fa-brands fa-linkedin fa-lg"></i></span></a></li>
+        <li><a class="modal-button" data-target="modal-card"><span class="icon"><i class="fa-regular fa-envelope fa-lg"></i></span></a></li>
     </ul>
   </div>
 </footer>
@@ -147,8 +165,8 @@
             <div class="card-content">
                 <div class="content">
                     <p class="title is-4">Let's get in touch!</p>
-                    <p class="subtitle is-8">Content above is static to avoid spam.</p>
-                    <p class="subtitle is-8"> Reach out by Email or InMail or, <a href="https://meetings.hubspot.com/andrewbauman001" target="_blank">we can schedule a call!</a></p>
+                    <p class="subtitle is-10">Content above is static to avoid spam.</p>
+                    <p class="subtitle is-8"> Reach out by Email or send me a message on LinkedIn</p>
                 </div>
             </div>
         </div>
